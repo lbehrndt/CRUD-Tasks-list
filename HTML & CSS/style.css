@@ -22,3 +22,14 @@ button,
   margin: auto;
   margin-top: 10px;
 }
+
+td {
+  background-color: aliceblue;
+  padding: 10px;
+  text-align: left;
+  border: 2px solid hsl(0, 50, 20);
+}
+
+.to-do {
+  background-color: transparent !important;
+}
