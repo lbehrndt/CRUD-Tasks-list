@@ -44,11 +44,17 @@ var app = new (function () {
    * Adds the task to the tasks array and displays it.
    */
   this.Add = function () {
+    // Access input field of task to be added.
     element = document.getElementById("add-todo");
+    // Set task
     var task = element.value;
+    // If there is a task, add it to the array.
     if (task) {
+      // Push task in the tasks array
       this.tasks.push(task.trim());
+      // Set empty string value
       element.value = "";
+      // Fetch All
       this.FetchAll();
     }
   };
